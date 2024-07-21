@@ -282,3 +282,8 @@
   .modalname {
     background:white !important;
   }
+
+  .href span{
+
+    color: rgba(0, 0, 0, 0.768) !important;
+  }

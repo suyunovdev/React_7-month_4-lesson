@@ -94,7 +94,6 @@ const Dashboard = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch data from the API
     const fetchData = async () => {
       try {
         const response = await fetch('http://localhost:3001/student');
@@ -114,7 +113,7 @@ const Dashboard = () => {
   };
 
   const handleLogout = () => {
-    navigate("/login");
+    navigate("/");
   };
 
   const handleAdd = () => {
@@ -199,7 +198,7 @@ const Dashboard = () => {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Teacher
+              Student
             </Typography>
             <IconButton color="inherit">
               <Badge className="badgers" badgeContent={4} sx={{ flexGrow: 1 }} color="secondary">

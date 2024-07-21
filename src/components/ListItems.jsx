@@ -5,7 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PeopleIcon from "@mui/icons-material/People";
-
+import './StudentApp.css'
 import { Link } from "react-router-dom";
 import { Person, Person2, Person2Outlined, Settings } from "@mui/icons-material";
 
@@ -17,18 +17,18 @@ export const mainListItems = (
       <Person/>
 
       </ListItemIcon>
-      <ListItemText primary="Teacher" />
+      <ListItemText className="href" primary="Teacher" />
     </ListItemButton>
     </Link>
 
 
-  <Link to="/">
+  <Link to="/student">
   <ListItemButton>
       <ListItemIcon>
       <PeopleIcon />
 
       </ListItemIcon>
-      <ListItemText primary="Students" />
+      <ListItemText className="href"  primary="Students" />
     </ListItemButton>
 
   </Link>
