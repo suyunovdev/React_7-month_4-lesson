@@ -35,12 +35,46 @@
 
 .biggest{
   display: flex !important;
-  width: 180vh !important;
+  width: 100%;
+  gap: 20px;
   justify-content: space-around;
 
 }
+/* .grids{
+  border: 1px black solid;
+} */
+.actionss{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.table{
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
+}
 .searches{
-  width: 550px !important;
+  width: 650px !important;
+}
+.cool{
+  padding: 10px 30px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px ;
+  cursor: pointer;
+
+}
+.delete{
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 8px ;
+  cursor: pointer;
 }
   .buttons {
     display: flex;

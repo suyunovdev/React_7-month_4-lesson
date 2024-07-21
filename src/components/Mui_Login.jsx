@@ -40,14 +40,11 @@ function Mui_Login() {
     const password = data.get('password');
     
     if (email === 'ilyos' && password === '333196454') {
-    //   toast.success('Login successful!', {
-    //     position: toast.POSITION.TOP_RIGHT,
-    //   });
+   
       navigate('/home'); // Home sahifasiga yo'naltirish
     } else {
-    //   Toast.error('Login yoki parol xato.', {
-    //     position: toast.POSITION.TOP_RIGHT,
-    //   });
+ 
+    navigate('/student'); // Dashboard 
     }
   };
 

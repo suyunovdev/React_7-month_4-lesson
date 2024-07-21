@@ -97,7 +97,7 @@ const Dashboard = () => {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/teacher');
+        const response = await fetch('http://localhost:3001/student');
         const data = await response.json();
         setStudents(data);
         setFilteredStudents(data);
@@ -246,7 +246,7 @@ const Dashboard = () => {
           <Container   >
             <Grid className="grids">
               <Stack>
-                <h1 className="text-center">Teacher List</h1>
+                <h1 className="text-center">Student List</h1>
                 <Stack>
                   <div className='biggest'>
                     <div className="search-bar">
@@ -272,12 +272,13 @@ const Dashboard = () => {
                         margin="normal"
                       >
                         <MenuItem value="">All</MenuItem>
-                        <MenuItem value="Senior">Senior</MenuItem>
-                        <MenuItem value="Middle">Middle</MenuItem>
-                        <MenuItem value="Junior">Junior</MenuItem>
+                        <MenuItem value="N59">N59</MenuItem>
+                        <MenuItem value="N58">N58</MenuItem>
+                        <MenuItem value="N50">N50</MenuItem>
+                        <MenuItem value="N55">N55</MenuItem>
                       </TextField>
                     </div>
-                     <Button variant="contained" onClick={handleAdd} className="btn btn-primary adds">Add Teacher</Button>
+                     <Button variant="contained" onClick={handleAdd} className="btn btn-primary adds">Add Student</Button>
                   </div>
                 </Stack>
                
@@ -286,7 +287,7 @@ const Dashboard = () => {
                     <tr>
                       <th>First Name</th>
                       <th>Last Name</th>
-                      <th>Level</th>
+                      <th>Group</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
@@ -364,9 +365,10 @@ const Dashboard = () => {
             value={editGroup}
             onChange={(e) => setEditGroup(e.target.value)}
           >
-            <MenuItem value="Senior">Senior</MenuItem>
-            <MenuItem value="Middle">Middle</MenuItem>
-            <MenuItem value="Junior">Junior</MenuItem>
+            <MenuItem value="N59">N59</MenuItem>
+            <MenuItem value="N58">N58</MenuItem>
+            <MenuItem value="N50">N50</MenuItem>
+            <MenuItem value="N55">N55</MenuItem>
           </TextField>
           <Button onClick={handleSave} variant="contained" color="primary">
             Save

@@ -5,28 +5,39 @@ import ListItemText from "@mui/material/ListItemText";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import PeopleIcon from "@mui/icons-material/People";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import LayersIcon from "@mui/icons-material/Layers";
+
+import { Link } from "react-router-dom";
+import { Person, Person2, Person2Outlined, Settings } from "@mui/icons-material";
 
 export const mainListItems = (
   <>
+    <Link to="/#">
     <ListItemButton>
       <ListItemIcon>
-        <DashboardIcon />
+      <Person/>
+
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemText primary="Teacher" />
     </ListItemButton>
-    <ListItemButton>
+    </Link>
+
+
+  <Link to="/">
+  <ListItemButton>
       <ListItemIcon>
-        <ShoppingCartIcon />
+      <PeopleIcon />
+
       </ListItemIcon>
       <ListItemText primary="Students" />
     </ListItemButton>
+
+  </Link>
+
     <ListItemButton>
       <ListItemIcon>
-        <PeopleIcon />
+        <Settings />
       </ListItemIcon>
-      <ListItemText primary="Teachers" />
+      <ListItemText primary="Settings" />
     </ListItemButton>
     <ListItemButton>
       <ListItemIcon>
