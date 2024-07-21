@@ -43,7 +43,7 @@ function Mui_Login() {
    
       navigate('/home'); // Home sahifasiga yo'naltirish
     } else {
- 
+      email === 'ilyos' && password === '333196454'
     navigate('/student'); // Dashboard 
     }
   };
