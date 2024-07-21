@@ -1,0 +1,64 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "firstname": "Ali",
+      "lastname": "Abdullaev",
+      "group": "A"
+    },
+    {
+      "id": 2,
+      "firstname": "Bekzod",
+      "lastname": "Baxromov",
+      "group": "B"
+    },
+    {
+      "id": 3,
+      "firstname": "Dilorom",
+      "lastname": "Choriev",
+      "group": "C"
+    },
+    {
+      "id": 4,
+      "firstname": "Elbek",
+      "lastname": "Davlatov",
+      "group": "D"
+    },
+    {
+      "id": 5,
+      "firstname": "Farrux",
+      "lastname": "Eshonov",
+      "group": "E"
+    },
+    {
+      "id": 6,
+      "firstname": "Gulnora",
+      "lastname": "Fozilov",
+      "group": "A"
+    },
+    {
+      "id": 7,
+      "firstname": "Hasan",
+      "lastname": "Ganiev",
+      "group": "B"
+    },
+    {
+      "id": 8,
+      "firstname": "Ibrohim",
+      "lastname": "Hasanov",
+      "group": "C"
+    },
+    {
+      "id": 9,
+      "firstname": "Jamila",
+      "lastname": "Ibrohimov",
+      "group": "D"
+    },
+    {
+      "id": 10,
+      "firstname": "Komila",
+      "lastname": "Jalilova",
+      "group": "E"
+    }
+  ]
+}
